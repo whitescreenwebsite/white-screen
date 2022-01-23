@@ -1,0 +1,87 @@
+    :-webkit-full-screen {
+      background-color: white;
+    }
+
+    :-ms-fullscreen {
+      background-color: white;
+    }
+
+    :fullscreen {
+      background-color: white;
+    }
+
+    .computer {
+      background: white;
+      width: 540px;
+      height: 455px;
+      background-size: contain;
+      margin: auto;
+    }
+
+    .computer-screen {
+      display: block;
+      position: relative;
+      top: 60px;
+      left: 65px;
+      width: 405px;
+      height: 244px;
+    }
+
+    .computer-screen-button {
+      font-size: 32px;
+      cursor: pointer;
+    }
+
+    .computer-screen-button-cta {
+      text-align: center;
+      line-height: 240px;
+      transition: all 0.3s;
+    }
+
+    .computer-screen-button-cta:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 30px -5px rgba(10, 16, 34, 0.2);
+      transition: all 0.3s;
+    }
+
+    @media all and (min-width: 601px) {
+      .computer {
+        width: 540px;
+        height: 455px;
+      }
+
+      .computer-screen-button-cta {
+        line-height: 240px;
+      }
+
+      .computer-screen {
+        top: 60px;
+        left: 65px;
+        width: 405px;
+      }
+
+      .computer-screen-button {
+        font-size: 32px;
+      }
+    }
+
+    @media all and (max-width: 600px) {
+      .computer {
+        width: 300px;
+        height: 252.5px;
+      }
+
+      .computer-screen-button-cta {
+        line-height: 75px;
+      }
+
+      .computer-screen {
+        top: 60px;
+        left: 40px;
+        width: 220px;
+      }
+
+      .computer-screen-button {
+        font-size: 22px;
+      }
+    }
